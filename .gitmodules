@@ -1,0 +1,3 @@
+[submodule "opentelemetry-rust"]
+	path = opentelemetry-rust
+	url = https://github.com/open-telemetry/opentelemetry-rust.git
