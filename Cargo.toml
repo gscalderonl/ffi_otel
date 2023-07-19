@@ -1,0 +1,22 @@
+[package]
+name = "ffi_otel"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+lazy_static = "1.4.0"
+cxx = "1.0"
+opentelemetry_api = { version = "0.19", path = "opentelemetry-rust/opentelemetry-api", features = ["logs"] }
+opentelemetry_sdk = { version = "0.19", path = "opentelemetry-rust/opentelemetry-sdk", features = ["logs"] }
+tracing = {version = "0.1.37", default-features = false, features = ["std"]}
+tracing-core = "0.1.31"
+tracing-subscriber = { version = "0.3.0", default-features = false, features = ["registry", "std"] }
+once_cell = "1.13.0"
+opentelemetry-stdout = { path = "opentelemetry-rust/opentelemetry-stdout", features = ["logs"] }
+opentelemetry-appender-tracing = {path = "opentelemetry-rust/opentelemetry-appender-tracing"}
+
+[build-dependencies]
+cxx-build = "1.0"

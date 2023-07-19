@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Rust & C++",
+            "program": "${workspaceFolder}/cpp_program",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build my project"
+        }
+    ]
+}
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "lldb",
+//             "request": "launch",
+//             "name": "Debug Rust & C++",
+//             "program": "${workspaceFolder}/home/gscalderon/ffi_otel_project/ffi_otel/src/main.cpp",
+//             "args": [],
+//             "cwd": "${workspaceFolder}",
+//             "preLaunchTask": "Your task for building the binary"
+//         }
+//     ]
+// }
